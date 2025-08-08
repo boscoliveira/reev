@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ingest-vep"
+version = "0.1.0"
+description = "Stream-ingest VEP-annotated VCF to Parquet and OpenSearch"
+authors = [{name="AI Agent"}]
+requires-python = ">=3.11"
+dependencies = [
+  "pyarrow>=16.0",
+  "pandas>=2.2",
+  "opensearch-py>=2.4",
+  "tqdm>=4.66",
+  "orjson>=3.10",
+]
+
+[project.scripts]
+ingest-vep = "ingestor.cli:main"

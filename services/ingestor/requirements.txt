@@ -1,0 +1,5 @@
+pyarrow>=16.0
+pandas>=2.2
+opensearch-py>=2.4
+tqdm>=4.66
+orjson>=3.10
