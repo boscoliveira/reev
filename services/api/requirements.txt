@@ -1,0 +1,12 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+python-dotenv>=1.0
+pyarrow>=16.0
+pandas>=2.2
+duckdb>=1.0
+opensearch-py>=2.4
+orjson>=3.10
+starlette>=0.40
+typing-extensions>=4.8
+uvloop; platform_system != 'Windows'
